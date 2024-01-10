@@ -118,7 +118,7 @@ resource "aws_iam_instance_profile" "worker" {
 
 ###############################################################################################################
 resource "aws_eks_cluster" "eks" {
-  name = "valaxy-eks-01"
+  name = "dmlane-eks-01"
   role_arn = aws_iam_role.master.arn
 
   vpc_config {
@@ -144,9 +144,9 @@ resource "aws_eks_node_group" "backend" {
   subnet_ids = [var.subnet_ids[0],var.subnet_ids[1]]
   capacity_type = "ON_DEMAND"
   disk_size = "20"
-  instance_types = ["t2.small"]
+  instance_types = ["t2.micro"]
   remote_access {
-    ec2_ssh_key = "dpp"
+    ec2_ssh_key = "aws-key1"
     source_security_group_ids = [var.sg_ids]
   } 
   
