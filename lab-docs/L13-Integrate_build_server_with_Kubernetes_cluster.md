@@ -2,7 +2,8 @@
 
 1. Setup kubectl   
    ```sh 
-     curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.24.9/2023-01-11/bin/linux/amd64/kubectl
+     curl -LO https://dl.k8s.io/release/v1.29.0/bin/linux/amd64/kubectl
+
      chmod +x ./kubectl
      mv ./kubectl /usr/local/bin
      kubectl version
