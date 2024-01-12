@@ -3,12 +3,12 @@
 1. Create a dedicated user to use for a docker login   
      user menu --> new user  
      `user name`: jfrogcred  
-     `email address`: logintoaws@gmail.com  
+     `email address`: devops003@gmail.com
      `password`: <passwrod>  
 
 2. To pull an image from jfrog at the docker level, we should log into jfrog using username and password   
 ```sh 
- docker login https://valaxy05.jfrog.io
+ docker login https://dml003.jfrog.io
 ```
 
 3. genarate encode value for ~/.docker/config.json file 
