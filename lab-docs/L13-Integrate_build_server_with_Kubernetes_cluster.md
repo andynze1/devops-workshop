@@ -3,7 +3,6 @@
 1. Setup kubectl   
    ```sh 
      curl -LO https://dl.k8s.io/release/v1.29.0/bin/linux/amd64/kubectl
-
      chmod +x ./kubectl
      mv ./kubectl /usr/local/bin
      kubectl version
@@ -26,5 +25,5 @@
 1. Download Kubernetes credentials and cluster configuration (.kube/config file) from the cluster  
 
    ```sh 
-    aws eks update-kubeconfig --region us-east-1 --name valaxy-eks-01
+    aws eks update-kubeconfig --region us-east-1 --name dmlane-eks-01
    ```
